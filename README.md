@@ -1,0 +1,2 @@
+# bino-template
+landing page
