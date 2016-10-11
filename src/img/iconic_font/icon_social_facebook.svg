@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3.51mm" height="7.05mm" viewBox="0 0 9.95 19.99">
+  <defs>
+    <style>
+      .a {
+        fill: #231f20;
+      }
+    </style>
+  </defs>
+  <title>icon_social_facebook</title>
+  <path class="a" d="M7.81,3.32H10V0H7.2C3.55,0.14,2.57,2.2,2.5,4.37h0V6.66H0V10H2.5V20H6.63V10H9.14l0.6-3.32H6.63v-2A1.2,1.2,0,0,1,7.81,3.32Z" transform="translate(-0.01 0)"/>
+</svg>
