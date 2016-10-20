@@ -1,0 +1,29 @@
+.icon-decor {
+  position: absolute;
+  box-sizing: content-box;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #f4f5f9;
+  z-index: 20;
+
+  &:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -5px;
+    left: -5px;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .25);
+    z-index: 15;
+  }
+
+  &:after {
+    position: absolute;
+    font-family: "icomoon";
+    color: $red;
+    z-index: 25;
+  }
+}

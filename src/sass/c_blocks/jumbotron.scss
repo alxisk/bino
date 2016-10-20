@@ -1,0 +1,73 @@
+.jumbotron {
+  position: relative;
+  padding-top: 330px;
+  height: 990px;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+                    url(../img/bg_header.png);
+  background-position: center center;
+
+  &__foreword {
+    margin-bottom: 35px;
+    font-family: $font-ssp;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
+
+  &__heading {
+    position: relative;
+    margin-bottom: 80px;
+    font-family: $font-osb;
+    font-size: 72px;
+    line-height: 72px;
+    text-transform: uppercase;
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      bottom: -44px;
+      left: 50%;
+      margin-left: -98px;
+      height: 7px;
+      width: 196px;
+      background-repeat: no-repeat;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAAAHCAMAAABgBBJDAAAAM1BMVEXnTDzx6+f////nTDznTDznTDznTDznTDznTDznTDznTDznTDznTDznTDznTDznTDzx6+ePZdUKAAAAD3RSTlMAAABTVlhZ0tPU1db3+fvCd1lnAAAAVUlEQVR42rWUQQ6AIAwEFxRUROH/rzX2VuOxMw/YzWTTKpNIpV3HKrE1cHodLwstkaJx6adJbE4ihQNL3CbRaYkZzN8S+0ciupNawt8EvQT/nRr+nR4/qhMcEAYmhAAAAABJRU5ErkJggg==);
+    }
+  }
+
+  &__text {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 55%;
+    font-family: $font-os;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  & .btn:nth-of-type(2) {
+    margin-left: 30px;
+  }
+
+  &__decoration {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+  }
+
+  &__icon-decor {
+    bottom: -25px;
+    left: 50%;
+    margin-left: -32px;
+
+    &:after {
+      top: 18px;
+      left: 22px;
+      content: "\e902";
+      font-size: 30px;
+    }
+  }
+}
