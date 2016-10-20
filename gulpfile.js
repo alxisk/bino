@@ -6,7 +6,6 @@ var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {
-
   return gulp.src('src/sass/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(rename(function(path) {
@@ -42,3 +41,4 @@ gulp.task('serve', function() {
 });
 
 gulp.task('dev', ['watch', 'serve']);
+gulp.task('dist', ['clean', 'sass', 'assets']);
