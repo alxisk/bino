@@ -1,0 +1,72 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 40px;
+  z-index: 100;
+
+  &__center-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+    flex: 0 1 141px;
+    height: 52px;
+    background-image: url(../img/sprite/spritesheet.png);
+    background-position: -139px -105px;
+
+    &:hover {
+      box-shadow: 0 0 20px rgba(255, 255, 255, .3);
+    }
+
+    &:active {
+      box-shadow: 0 0 15px rgba(255, 255, 255, .2);
+    }
+  }
+}
+
+.nav {
+  flex: 0 1 62.4%;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  &__item {
+    position: relative;
+    flex: 0 1 auto;
+    font-family: $font-os;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $white;
+
+    &:hover {
+      color: $red;
+    }
+
+    &:active {
+      color: darken($red, 20%);
+    }
+
+    &:hover:after {
+      position: absolute;
+      display: block;
+      content: "";
+      bottom: -20px;
+      left: -2px;
+      right: -2px;
+      height: 1px;
+      background: $red;
+    }
+
+    &:active:after {
+      background: darken($red, 20%);
+    }
+  }
+}
