@@ -1,0 +1,66 @@
+.features {
+  position: relative;
+  padding-top: 125px;
+  padding-bottom: 105px;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e6e7eb;
+  }
+
+  &__center-wrap {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__feature-item {
+    position: relative;
+    flex: 0 1 20%;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      left: 50%;
+      background-image: url(../img/sprite/spritesheet.png);
+    }
+
+    &:nth-child(1):before {
+      top: 33px;
+      margin-left: -14px;
+      width: 27px;
+      height: 13px;
+      background-position: -88px -10px;
+    }
+
+    &:nth-child(2):before {
+      top: 31px;
+      margin-left: -10px;
+      width: 21px;
+      height: 19px;
+      background-position: -135px -10px;
+    }
+
+    &:nth-child(3):before {
+      top: 26px;
+      margin-left: -9px;
+      width: 17px;
+      height: 27px;
+      background-position: -10px -10px;
+    }
+
+    &:nth-child(4):before {
+      top: 29px;
+      margin-left: -10px;
+      width: 21px;
+      height: 22px;
+      background-position: -176px -10px;
+    }
+  }
+}
