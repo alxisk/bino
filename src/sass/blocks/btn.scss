@@ -8,8 +8,6 @@
   border: 1px solid $red;
   border-radius: 3px;
   background: $red;
-  outline: none;
-  cursor: pointer;
 
   &:hover {
     border-color: darken($red, 12%);

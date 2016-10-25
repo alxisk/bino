@@ -11,6 +11,14 @@ a {
   color: inherit;
 }
 
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .center-wrap {
   padding: 0 15px;
   margin: 0 auto;

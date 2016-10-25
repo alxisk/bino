@@ -9,6 +9,14 @@
   &__center-wrap {
     display: flex;
     justify-content: space-between;
+
+    @media #{$mq-md} {
+      justify-content: space-around;
+    }
+
+    @media #{$mq-sm} {
+      padding: 0 5%;
+    }
   }
 
   &__logo {
@@ -31,10 +39,36 @@
 .nav {
   flex: 0 1 62.4%;
 
+  @media #{$mq-md} {
+    flex: 0 1 70%;
+  }
+
+  @media #{$mq-sm} {
+    flex-basis: 10%;
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
     padding-left: 0;
+
+    @media #{$mq-sm} {
+      // margin-right: -35vw;
+      position: fixed;
+      flex-direction: column;
+      justify-content: space-around;
+      top: 0px;
+      right: 0;
+      padding-top: 10vw;
+      width: 35vw;
+      height: 90vh;
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+      border-left: 1px solid $white;
+      border-radius: 5px 0px 0px 5px;
+      text-shadow: 0 0 3px black;
+      background: rgba(32, 32, 32, .9);
+    }
   }
 
   &__item {
@@ -46,8 +80,18 @@
     text-transform: uppercase;
     color: $white;
 
+    @media #{$mq-sm} {
+      padding: 1.5vh 0;
+      padding-left: 10%;
+      width: 100%;
+    }
+
     &:hover {
       color: $red;
+
+      @media #{$mq-sm} {
+        box-shadow: 0 0 5px $white;
+      }
     }
 
     &:active {
@@ -63,10 +107,51 @@
       right: -2px;
       height: 1px;
       background: $red;
+
+      @media #{$mq-sm} {
+        display: none;
+      }
     }
 
     &:active:after {
       background: darken($red, 20%);
+    }
+  }
+
+  &__cross {
+    display: none;
+
+    @media #{$mq-sm} {
+      display: block;
+      position: absolute;
+      top: 3.8vh;
+      right: 5.8vw;
+
+      &:before {
+        content: "\e90f";
+        font-family: "icomoon";
+        font-size: 46px;
+        color: white;
+      }
+
+      &:hover:before {
+        text-shadow: 0 0 15px white;
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media #{$mq-sm} {
+      display: block;
+
+      &:before {
+        content: "\e910";
+        font-family: "icomoon";
+        font-size: 55px;
+        color: white;
+      }
     }
   }
 }
