@@ -1,0 +1,90 @@
+.services {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    flex: 0 1 57%;
+    padding-top: 150px;
+    padding-bottom: 95px;
+    padding-right: 80px;
+    padding-left: 3%;
+    background: #202020;
+
+    @media #{$mq-md} {
+      flex-basis: 65%;
+      padding-top: 120px;
+      padding-bottom: 60px;
+    }
+
+    @media #{$mq-sm} {
+      flex-basis: 100%;
+      padding-top: 90px;
+      padding-bottom: 30px;
+      padding-left: 5%;
+      padding-right: 8%;
+    }
+  }
+
+  &__aligned-heading {
+    padding-right: 35px;
+    text-align: right;
+    color: $white;
+
+    &:before {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  & .text-content__title,
+  & .text-content__text {
+    text-align: right;
+  }
+
+  & .icon-decor {
+    top: 12px;
+    right: -112px;
+
+    @media #{$mq-sm} {
+      display: none;
+    }
+  }
+
+  & .text-content:nth-of-type(1) .icon-decor:after {
+    top: 22px;
+    left: 18px;
+    content: "\e904";
+    font-size: 23px;
+  }
+
+  & .text-content:nth-of-type(2) .icon-decor:after {
+    top: 21px;
+    left: 17px;
+    content: "\e905";
+    font-size: 26px;
+  }
+
+  & .text-content:nth-of-type(3) .icon-decor:after {
+    top: 21px;
+    left: 19px;
+    content: "\e903";
+    font-size: 22px;
+  }
+
+  &__img {
+    flex: 0 1 43%;
+    background-image: url(../img/bg_services.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    border-style: cover;
+
+    @media #{$mq-md} {
+      flex-basis: 35%;
+      background-position-x: 12%;
+    }
+
+    @media #{$mq-sm} {
+      display: none;
+    }
+  }
+}

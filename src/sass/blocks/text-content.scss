@@ -1,5 +1,14 @@
 .text-content {
+  position: relative;
   padding-bottom: 10px;
+
+  &__title {
+    font-family: $font-ossb;
+    font-size: 18px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: $red;
+  }
 
   &__text {
     margin-bottom: 30px;

@@ -11,6 +11,16 @@ a {
   color: inherit;
 }
 
+::selection {
+  color: cyan;
+  background: #666;
+}
+
+::-moz-selection {
+  color: cyan;
+  background: #666;
+}
+
 button {
   padding: 0;
   border: none;

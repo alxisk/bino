@@ -6,6 +6,19 @@
   border-radius: 50%;
   background: #f4f5f9;
   z-index: 20;
+  transition: 0.4s;
+
+  &:hover {
+    background: darken($red, 13%);
+  }
+
+  &:hover:before {
+    background: rgba(255, 150, 150, .25);
+  }
+
+  &:hover:after {
+    color: $white;
+  }
 
   &:before {
     position: absolute;
@@ -22,6 +35,8 @@
 
   &:after {
     position: absolute;
+    top: 0;
+    left: 0;
     font-family: "icomoon";
     color: $red;
     z-index: 25;
