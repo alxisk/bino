@@ -1,0 +1,45 @@
+.history {
+  padding-top: 140px;
+  padding-bottom: 145px;
+
+  @media #{$mq-md} {
+    padding-top: 110px;
+    padding-bottom: 115px;
+  }
+
+  @media #{$mq-sm} {
+    padding-top: 75px;
+    padding-bottom: 80px;
+    padding-left: 5%;
+  }
+
+  &__center-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    flex: 0 1 45%;
+    height: 408px;
+    background-image: url(../img/mac_monitu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media #{$mq-md} {
+      align-self: center;
+      background-position-y: center;
+    }
+
+    @media #{$mq-sm} {
+      display: none;
+    }
+  }
+
+  &__wrap {
+    flex: 0 1 50%;
+
+    @media #{$mq-sm} {
+      flex-basis: 95%;
+    }
+  }
+}

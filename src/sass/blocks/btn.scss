@@ -8,6 +8,11 @@
   border: 1px solid $red;
   border-radius: 3px;
   background: $red;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, .25);
+
+  @media #{$mq-sm} {
+    padding: 15px 30px;
+  }
 
   &:hover {
     border-color: darken($red, 12%);

@@ -1,0 +1,11 @@
+.text-content {
+  padding-bottom: 10px;
+
+  &__text {
+    margin-bottom: 30px;
+    font-family: $font-ssp;
+    font-size: 14px;
+    line-height: 29px;
+    color: $grey-text;
+  }
+}

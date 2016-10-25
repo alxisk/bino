@@ -70,7 +70,9 @@
     }
 
     &--closed {
-      margin-right: -35vw;
+      @media #{$mq-sm} {
+        margin-right: -35vw;  
+      }
     }
   }
 
