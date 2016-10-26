@@ -1,0 +1,43 @@
+.block-heading {
+  padding-top: 130px;
+  margin-bottom: 95px;
+  text-align: center;
+
+  @media #{$mq-md} {
+    padding-top: 100px;
+  }
+
+  @media #{$mq-sm} {
+    padding-top: 65px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-family: $font-sspb;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: $black-title;
+  }
+
+  &__text {
+    position: relative;
+    font-family: $font-os;
+    font-size: 14px;
+    line-height: 29px;
+    color: $grey-text;
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      bottom: -30px;
+      left: 50%;
+      margin-left: -98px;
+      height: 7px;
+      width: 196px;
+      background-repeat: no-repeat;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAAAHCAMAAABgBBJDAAAAM1BMVEWZmZnnTDz////nTDznTDznTDznTDznTDznTDznTDznTDznTDznTDznTDznTDyZmZnnTDxJ3XIiAAAAD3RSTlMAAABTVFZYWdLT1db3+fsmimbWAAAAVElEQVR42r3USw6AMAhFUR9+qq1a9r9aw7BJh1zPBsgNgcVIUmlP3SUZCY4oHjY6It0Q0TxcEjoSjng93HRETzbbxDlEADPTTW5ipTdhJOmoP3ynDw9mEM6wci0eAAAAAElFTkSuQmCC);
+    }
+  }
+}

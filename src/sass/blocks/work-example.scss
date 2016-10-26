@@ -1,0 +1,80 @@
+.work-example {
+  position: relative;
+  flex: 0 1 25%;
+  height: 50%;
+
+  @media #{$mq-sm} {
+    flex-basis: 50%;
+    height: 25%;
+  }
+
+  &__hover-layer {
+    position: relative;
+    height: 100%;
+    color: white;
+    background: rgba(231, 76, 60, .8);
+    opacity: 0;
+    transition: .6s;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 69%;
+      left: 10%;
+      width: 44px;
+      height: 4px;
+      background: white;
+
+      @media #{$mq-md} {
+        top: 54%;
+      }
+
+      @media #{$mq-sm} {
+        top: 54%;
+      }
+    }
+  }
+
+  &:hover &__hover-layer {
+    opacity: 1;
+  }
+
+  &__title {
+    position: absolute;
+    top: 76%;
+    left: 10%;
+    font-family: $font-sspsb;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    @media #{$mq-md} {
+      top: 64%;
+      font-size: 20px;
+    }
+
+    @media #{$mq-sm} {
+      top: 64%;
+      font-size: 16px;
+    }
+  }
+
+  &__descr {
+    position: absolute;
+    top: 87%;
+    left: 10%;
+    font-family: $font-os;
+    font-size: 14px;
+    line-height: 14px;
+
+    @media #{$mq-md} {
+      top: 78%;
+      font-size: 12px;
+    }
+
+    @media #{$mq-sm} {
+      top: 78%;
+    }
+  }
+}
