@@ -7,6 +7,8 @@ var cross = document.querySelector('.nav__cross');
 var navList = document.querySelector('.nav__list');
 var workExample = document.querySelector('.work-example');
 var workExampleWrap = document.querySelector('.recent-works__examples');
+var switcher = document.querySelector('.switch');
+var caseFeatures = document.querySelector('.case-study__items');
 
 
 document.querySelector('.nav').addEventListener('click', function(event) {
@@ -38,6 +40,24 @@ document.querySelector('.recent-works__sort').onclick = function() {
 
 setWorkExampleHeight();
 window.addEventListener('resize', setWorkExampleHeight);
+
+switcher.addEventListener('click', function() {
+  var target = event.target;
+
+  if (target.classList.contains('switch__item--active')) return;
+
+  [].forEach.call(this.children, function(item) {
+    if (item.firstElementChild.checked == true) {
+      item.classList.add('switch__item--active');
+      caseFeatures.children[[].indexOf.call(item.parentElement.children, item)]
+        .classList.add('case-study__feature-item--active');
+    } else {
+      item.classList.remove('switch__item--active');
+      caseFeatures.children[[].indexOf.call(item.parentElement.children, item)]
+        .classList.remove('case-study__feature-item--active');
+    }
+  })
+})
 
 function toggleMenu() {
   navList.classList.toggle('nav__list--closed');

@@ -1,0 +1,126 @@
+.case-study {
+  position: relative;
+  padding-bottom: 150px;
+  background: $white;
+
+  @media #{$mq-sm} {
+    padding-bottom: 630px;
+  }
+
+  &__items {
+    position: absolute;
+    top: 365px;
+    right: 50%;
+    margin-right: -80px;
+    width: 666px;
+    height: 630px;
+    background: white;
+    z-index: 5;
+
+    @media #{$mq-md} {
+      top: 335px;
+      right: 48%;
+      width: 55%;
+    }
+
+    @media #{$mq-sm} {
+      top: 230px;
+      right: 50%;
+      margin-right: -50%;
+      width: 100%;
+    }
+  }
+
+  &__feature-item {
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    right: 60px;
+    z-index: 10;
+    opacity: 0;
+    transition: 0.6s;
+
+    @media #{$mq-sm} {
+      left: 5%;
+      right: 5%;
+
+    }
+
+    &--active {
+      z-index: 20;
+      opacity: 1;
+    }
+
+    & .feature-item__img,
+    &:hover .feature-item__img {
+      margin-top: 0;
+      margin-bottom: 70px;
+      width: 90px;
+      height: 90px;
+      border-color: $red;
+      transform: rotate(45deg);
+      transition: .4s;
+      background: $red;
+    }
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 34px;
+      left: 50%;
+      margin-left: -10px;
+      width: 21px;
+      height: 34px;
+      background-image: url(../img/sprite/spritesheet.png);
+      background-repeat: no-repeat;
+      background-position: -47px -10px;
+    }
+
+    & .feature-item__title {
+      margin-bottom: 50px;
+
+      &:after {
+        bottom: -30px;
+      }
+    }
+
+    & .feature-item__text {
+      max-height: 140px;
+      overflow: hidden;
+    }
+
+    & .btn {
+      margin-top: 50px;
+
+      @media #{$mq-md} {
+        margin-top: 35px;
+      }
+    }
+  }
+
+  &__switch {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -26px;
+  }
+
+  &__img {
+    margin-left: 50%;
+    width: 50%;
+    height: 725px;
+    background-image: url(../img/case_study_img.png);
+    background-repeat: no-repeat;
+    border-style: contain;
+    background-position: center center;
+
+    @media #{$mq-md} {
+      margin-left: 45%;
+    }
+
+    @media #{$mq-sm} {
+      display: none;
+    }
+  }
+}
