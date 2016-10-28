@@ -1,0 +1,30 @@
+.arrow {
+  padding-top: 24px;
+  width: 30px;
+  height: 47px;
+  font-family: "icomoon";
+  font-size: 90px;
+  line-height: 0px;
+  color: $grey-text;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    color: $red;
+    text-shadow: 0 0 3px $red;
+  }
+
+  &:active {
+    color: darken($red, 15%);
+  }
+
+  &--left:before {
+    margin-left: -30px;
+    content: "\e901";
+  }
+
+  &--right:before {
+    margin-left: -30px;
+    content: "\e900";
+  }
+}

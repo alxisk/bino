@@ -1,0 +1,120 @@
+.offer {
+  position: relative;
+  width: 380px;
+
+  &__head {
+    padding-top: 45px;
+    height: 205px;
+    text-align: center;
+    background: $grey-text;
+  }
+
+  &__title {
+    font-family: $font-ossb;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__price {
+    position: absolute;
+    top: 122px;
+    left: 50%;
+    margin-left: -87px;
+    width: 174px;
+    height: 174px;
+    border-radius: 50%;
+    color: $grey-text;
+    background: rgba(244, 245, 249, .25);
+
+    @media #{$mq-md} {
+      margin-left: -77px;
+      width: 154px;
+      height: 154px;
+    }
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 10px;
+      left: 10px;
+      width: 154px;
+      height: 154px;
+      border-radius: 50%;
+      background: white;
+
+      @media #{$mq-md} {
+        width: 134px;
+        height: 134px;
+      }
+    }
+  }
+
+  &__amount {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -30px;
+    font-family: $font-sspb;
+    font-size: 39px;
+    line-height: 39px;
+
+    @media #{$mq-md} {
+      top: 50px;
+    }
+  }
+
+  &__period {
+    position: absolute;
+    top: 93px;
+    left: 50%;
+    margin-left: -27px;
+    font-family: $font-ssp;
+    font-size: 13px;
+    line-height: 22px;
+
+    @media #{$mq-md} {
+      top: 88px;
+    }
+  }
+
+  &__body {
+    padding-top: 95px;
+    padding-bottom: 50px;
+    background: $white;
+    text-align: center;
+
+    @media #{$mq-md} {
+      padding-top: 80px;
+    }
+  }
+
+  &__list {
+    padding-left: 0;
+    margin-bottom: 35px;
+    max-height: 160px;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  &__list-item {
+    font-family: $font-ossb;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: $grey-text;
+  }
+
+  &--best {
+    & .offer__head {
+      background: $red;
+    }
+
+    & .offer__amount {
+      color: $red;
+    }
+  }
+}

@@ -1,3 +1,51 @@
 .pricing {
-  
+  margin-bottom: 145px;
+  overflow: hidden;
+
+  @media #{$mq-md} {
+    margin-bottom: 105px;
+  }
+
+  @media #{$mq-sm} {
+    margin-bottom: 65px;
+  }
+
+  &__offers {
+    display: flex;
+    justify-content: space-between;
+
+    @media #{$mq-sm} {
+      justify-content: space-around;
+      margin-left: -0%;
+      width: 300%;
+      transition: 0.6s;
+    }
+
+    & .offer {
+      position: relative;
+      flex: 0 1 32.5%;
+
+      @media #{$mq-sm} {
+        flex-basis: 30%;
+      }
+    }
+
+    & .arrow {
+      display: none;
+
+      @media #{$mq-sm} {
+        position: absolute;
+        display: block;
+        top: 250px;
+      }
+
+      &--left {
+        left: 5%;
+      }
+
+      &--right {
+        right: 5%;
+      }
+    }
+  }
 }

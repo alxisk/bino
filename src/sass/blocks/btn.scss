@@ -26,7 +26,6 @@
   }
 
   &--transparent {
-    box-sizing: border-box !important;
     border: 1px solid white;
     background: transparent;
 
@@ -38,6 +37,21 @@
     &:active {
       border-color: darken(white, 30%);
       background: rgba(0, 0, 0, .3);
+    }
+  }
+
+  &--grey {
+    border-color: $grey-text;
+    background: $grey-text;
+
+    &:hover {
+      border-color: darken($grey-text, 10%);
+      background: darken($grey-text, 10%);
+    }
+
+    &:active {
+      border-color: darken($grey-text, 15%);
+      background: darken($grey-text, 15%);
     }
   }
 }

@@ -9,6 +9,7 @@ var workExample = document.querySelector('.work-example');
 var workExampleWrap = document.querySelector('.recent-works__examples');
 var switcher = document.querySelector('.switch');
 var caseFeatures = document.querySelector('.case-study__items');
+var offerWrap = document.querySelector('.pricing__offers');
 
 
 document.querySelector('.nav').addEventListener('click', function(event) {
@@ -57,7 +58,19 @@ switcher.addEventListener('click', function() {
         .classList.remove('case-study__feature-item--active');
     }
   })
-})
+});
+
+offerWrap.addEventListener('click', function() {
+  var target = event.target;
+
+  if (target.classList.contains('arrow--left')) {
+    moveSlider(this, 100);
+  }
+
+  if (target.classList.contains('arrow--right')) {
+    moveSlider(this, -100);
+  }
+});
 
 function toggleMenu() {
   navList.classList.toggle('nav__list--closed');
@@ -70,6 +83,11 @@ function setWorkExampleHeight() {
   }
 
   workExampleWrap.style.height = workExample.clientWidth * 2 + 'px';
+}
+
+function moveSlider(parent, val) {
+  var newMargin = (parseInt(parent.style.marginLeft) || 0) + val;
+  parent.style.marginLeft = Math.max(Math.min(newMargin, 0), -200) + '%';
 }
 
 }
