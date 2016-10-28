@@ -1,0 +1,152 @@
+.social-stat {
+  padding-top: 160px;
+  padding-bottom: 135px;
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+                    url('../img/bg_statistics_block.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media #{$mq-md} {
+    padding-top: 120px;
+    padding-bottom: 95px;
+  }
+
+  @media #{$mq-sm} {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  &__center-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @media #{$mq-sm} {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    flex: 0 1 20%;
+    text-align: center;
+    color: white;
+
+    @media #{$mq-sm} {
+      flex-basis: 47%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 440px) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__img {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 110px;
+    height: 110px;
+    border: 1px solid white;
+    border-radius: 50%;
+
+    @media #{$mq-md} {
+      width: 90px;
+      height: 90px;
+    }
+
+    @media #{$mq-sm} {
+      flex: 0 1 auto;
+      width: 90px;
+      height: 90px;
+    }
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      background-image: url(../img/sprite/spritesheet.png);
+    }
+  }
+
+  &__item:nth-child(1) &__img:after {
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -15px;
+    width: 31px;
+    height: 26px;
+    background-position: -217px -10px;
+  }
+
+  &__item:nth-child(2) &__img:after {
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -15px;
+    width: 29px;
+    height: 29px;
+    background-position: -139px -56px;
+  }
+
+  &__item:nth-child(3) &__img:after {
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    width: 31px;
+    height: 31px;
+    background-position: -88px -56px;
+  }
+
+  &__item:nth-child(4) &__img:after {
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -15px;
+    width: 31px;
+    height: 29px;
+    background-position: -188px -56px;
+  }
+
+  &__item:nth-child(5) &__img:after {
+    content: "\e906";
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -10px;
+    font-family: "icomoon";
+    font-size: 28px;
+    background-image: none;
+  }
+
+  &__text {
+    @media #{$mq-sm} {
+      flex: 0 1 50%;
+    }
+  }
+
+  &__number {
+    margin-bottom: 5px;
+    font-family: $font-sspb;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    @media #{$mq-md} {
+      font-size: 26px;
+    }
+  }
+
+  &__descr {
+    font-family: $font-ssp;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: capitalize;
+
+    @media #{$mq-md} {
+      font-size: 16px;
+    }
+  }
+}
