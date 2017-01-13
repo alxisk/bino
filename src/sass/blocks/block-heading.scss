@@ -23,6 +23,8 @@
 
   &__text {
     position: relative;
+    margin: 0 auto;
+    max-width: 60%;
     font-family: $font-os;
     font-size: 14px;
     line-height: 29px;
