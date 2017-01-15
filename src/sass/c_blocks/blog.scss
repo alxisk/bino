@@ -1,0 +1,10 @@
+.blog {
+  background: #f4f5f9;
+
+  &__posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 600px;
+  }
+}

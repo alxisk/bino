@@ -10,6 +10,8 @@ var workExampleWrap = document.querySelector('.recent-works__examples');
 var switcher = document.querySelector('.switch');
 var caseFeatures = document.querySelector('.case-study__items');
 var offerWrap = document.querySelector('.pricing__offers');
+var blogArticle = document.querySelector('.blog-post__article');
+var blogPostWrap = document.querySelector('.blog__posts');
 
 
 document.querySelector('.nav').addEventListener('click', function(event) {
@@ -39,8 +41,13 @@ document.querySelector('.recent-works__sort').onclick = function() {
   }
 }
 
-setWorkExampleHeight();
-window.addEventListener('resize', setWorkExampleHeight);
+setElementWrapHeight(workExample, workExampleWrap);
+setElementWrapHeight(blogArticle, blogPostWrap);
+
+window.addEventListener('resize', function() {
+  setElementWrapHeight(workExample, workExampleWrap);
+  setElementWrapHeight(blogArticle, blogPostWrap);
+});
 
 switcher.addEventListener('click', function() {
   var target = event.target;
@@ -76,13 +83,13 @@ function toggleMenu() {
   navList.classList.toggle('nav__list--closed');
 }
 
-function setWorkExampleHeight() {
+function setElementWrapHeight(element, elementWrap) {
   if (window.innerWidth < 768) {
-    workExampleWrap.style.height = workExample.clientWidth * 4 + 'px';
+    elementWrap.style.height = element.clientWidth * 4 + 'px';
     return;
   }
 
-  workExampleWrap.style.height = workExample.clientWidth * 2 + 'px';
+  elementWrap.style.height = element.clientWidth * 2 + 'px';
 }
 
 function moveSlider(parent, val) {
