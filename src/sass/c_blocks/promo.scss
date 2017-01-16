@@ -1,0 +1,57 @@
+.promo {
+  padding-top: 145px;
+  height: 480px;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url(../img/bg_footer.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  @media #{$mq-md} {
+    padding-top: 135px;
+    height: 450px;
+  }
+
+  @media #{$mq-md} {
+    padding-top: 100px;
+    height: 450px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-family: $font-os;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: capitalize;
+
+    @media #{$mq-md} {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    @media #{$mq-sm} {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    & span {
+      font-family: $font-osb;
+    }
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    font-family: $font-os;
+    font-size: 18px;
+    line-height: 36px;
+
+    @media #{$mq-md},
+           #{$mq-sm} {
+      margin-bottom: 50px;
+      font-size: 15px;
+      line-height: 32px;
+    }
+  }
+}
