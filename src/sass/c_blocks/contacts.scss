@@ -1,0 +1,128 @@
+.contacts {
+  padding-bottom: 150px;
+  background: $white;
+
+  @media #{$mq-md} {
+    padding-bottom: 100px;
+  }
+
+  @media #{$mq-sm} {
+    padding-bottom: 60px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-around;
+    height: 565px;
+
+    @media #{$mq-sm} {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 850px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0 1 40%;
+    padding-top: 85px;
+    padding-left: 7.6%;
+    padding-right: 7.6%;
+    background: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+
+    @media #{$mq-sm} {
+      flex-direction: unset;
+      flex-wrap: wrap;
+      align-content: space-around;
+      flex-basis: 39%;
+      padding-top: 60px;
+      text-align: center;
+    }
+  }
+
+  &__section {
+    flex: 0 1 32%;
+
+    @media #{$mq-sm} {
+      flex-basis: 220px;
+      height: 100px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-family: $font-sspsb;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $red;
+
+    @media #{$mq-sm} {
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  &__text {
+    font-family: $font-os;
+    font-size: 18px;
+    line-height: 24px;
+    color: $grey-text;
+
+    @media #{$mq-sm} {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__form {
+    flex: 0 1 55.5%;
+    padding: 80px 8.5% 80px 8.5%;
+    background: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+
+    @media #{$mq-sm} {
+      padding-top: 60px;
+      padding-bottom: 45px;
+      flex-basis: 45%;
+      text-align: center;
+    }
+
+    input::-webkit-input-placeholder {opacity: 1;}
+    input::-moz-placeholder          {opacity: 1;}
+    input:-moz-placeholder           {opacity: 1;}
+    input:-ms-input-placeholder      {opacity: 1;}
+    textarea::-webkit-input-placeholder {opacity: 1;}
+    textarea::-moz-placeholder          {opacity: 1;}
+    textarea:-moz-placeholder           {opacity: 1;}
+    textarea:-ms-input-placeholder      {opacity: 1;}
+
+    & input[type="text"] {
+      margin-bottom: 10px;
+    }
+
+    & input[type="text"],
+    & textarea {
+      padding-top: 13px;
+      padding-bottom: 13px;
+      width: 100%;
+      font-family: $font-ossb;
+      font-size: 14px;
+      line-height: 24px;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #e5e5e5;
+      color: $grey-text;
+    }
+
+    & textarea {
+      margin-bottom: 30px;
+      height: 130px;
+      resize: none;
+    }
+  }
+}

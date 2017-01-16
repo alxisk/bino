@@ -448,27 +448,29 @@
         <h2 class="block-heading__title">Keep in touch</h2>
         <p class="block-heading__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, quibusdam. Ex saepe porro voluptate recusandae reiciendis!</p>
       </div>
-      <div class="contacts__info">
-        <div class="contacts__address">
-          <p class="contacts__title">Our address</p>
-          <p class="contacts__text">House #13, Street road, Sydney<br>2310 Australia</p>
+      <div class="contacts__wrap">
+        <div class="contacts__info">
+          <div class="contacts__section">
+            <p class="contacts__title">Our address</p>
+            <p class="contacts__text">House #13, Street road, Sydney<br>2310 Australia</p>
+          </div>
+          <div class="contacts__section">
+            <p class="contacts__title">Call us</p>
+            <p class="contacts__text">+ 880 168 109 1425<br>+ 0216809142</p>
+          </div>
+          <div class="contacts__section">
+            <p class="contacts__title">Email us</p>
+            <p class="contacts__text">contactus@email.com</p>
+          </div>
         </div>
-        <div class="contacts__phone">
-          <p class="contacts__title">Call us</p>
-          <p class="contacts__text">+ 880 168 109 1425<br>+ 0216809142</p>
-        </div>
-        <div class="contacts__email">
-          <p class="contacts__title">Email us</p>
-          <p class="contacts__text">contactus@email.com</p>
-        </div>
+        <form action="/" class="contacts__form">
+          <input type="text" name="name" placeholder="Name">
+          <input type="text" name="email" placeholder="Email">
+          <input type="text" name="subject" placeholder="Subject">
+          <textarea name="message" cols="50" rows="30" placeholder="Message"></textarea>
+          <button class="btn  btn--red">Send message</button>
+        </form>
       </div>
-      <form action="/" class="contacts__form">
-        <input type="text" name="name" placeholder="Name">
-        <input type="text" name="email" placeholder="Email">
-        <input type="text" name="subject" placeholder="Subject">
-        <textarea name="message" cols="50" rows="30" placeholder="Message"></textarea>
-        <button class="btn  btn--red">Send message</button>
-      </form>
     </div>
   </article>
 
