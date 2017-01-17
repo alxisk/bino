@@ -1,0 +1,18 @@
+.footer {
+  padding-top: 35px;
+  height: 90px;
+  background: #202020;
+
+  &__center-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    margin-top: -2px;
+    font-family: $font-ossb;
+    font-size: 14px;
+    line-height: 24px;
+    color: $grey-text;
+  }
+}

@@ -1,0 +1,53 @@
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+
+  &__btn {
+    color: $grey-text;
+    transition: .3s;
+
+    &:after {
+      font-family: "icomoon";
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &:hover {
+      color: $red;
+      transform: rotate(360deg);
+    }
+  }
+
+  &__facebook:after {
+    content: "\e907";
+  }
+
+  &__twitter:after {
+    content: "\e90d";
+  }
+
+  &__rss:after {
+    content: "\e90a";
+  }
+
+  &__google-plus:after {
+    content: "\e908";
+  }
+
+  &__linkedin:after {
+    content: "\e909";
+  }
+
+  &__skype:after {
+    content: "\e90b";
+  }
+
+  &__vimeo:after {
+    content: "\e90e";
+  }
+
+  &__tumblr:after {
+    content: "\e90c";
+  }
+}
