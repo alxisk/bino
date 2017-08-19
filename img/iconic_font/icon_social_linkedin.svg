@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.14mm" height="6.55mm" viewBox="0 0 20.23 18.57">
+  <defs>
+    <style>
+      .a {
+        fill: #231f20;
+      }
+    </style>
+  </defs>
+  <title>icon_social_linkedin</title>
+  <path class="a" d="M151.71,19.16h4.14V6.67h-4.14V19.16Z" transform="translate(-151.37 -0.59)"/>
+  <path class="a" d="M166.46,6.25a4.59,4.59,0,0,0-4,2.13V6.67h-4.11V19.16h4.14V12.39c0-1.43.72-2.83,2.36-2.83a2.69,2.69,0,0,1,2.63,2.79v6.8h4.14V12.08C171.6,7.16,168.27,6.25,166.46,6.25Z" transform="translate(-151.37 -0.59)"/>
+  <path class="a" d="M153.8,0.59a2.33,2.33,0,0,0-2.44,2.2,2.45,2.45,0,0,0,4.87,0A2.33,2.33,0,0,0,153.8.59Z" transform="translate(-151.37 -0.59)"/>
+</svg>
